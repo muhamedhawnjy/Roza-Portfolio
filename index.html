@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="fonts/fa-brands-400.ttf">
+    <link rel="stylesheet" href="fonts/fa-regular-400.ttf">
+    <link rel="stylesheet" href="fonts/fa-solid-900.ttf">
+    <link rel="stylesheet" href="css/jquery.flipster.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;500&display=swap" rel="stylesheet">
+    <title>Roza Portfolio</title>
+</head>
+<body class='my-bg'>
+
+    <!-- Go to up -->
+    <div class="to-up">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+   <!-----------------------------> 
+   <!-- Work Viewer -->
+   <!-- It's for display your work details -->
+   <div class="work-viewer py-5">
+       <div class="container">
+        <div class="close">X</div><!--Close Work Viewer-->
+           <h1 class="h1" id='title'></h1>
+           <span class="category">Category : <span id="category"><!--Work Category--></span></span>
+           <div class="row my-5">
+            <div class="col-lg-8">
+                <div class="info">
+                    <h3 class="h3">Project Brief:</h3>
+                    <p class="lead" id='brief'><!--Project Brief--></p>
+                </div>
+               </div>    
+            <div class="col-lg-4">
+                <div class="info">
+                    <div class="item">Date: <span id='date'><!--Date of work-->/span></div>
+                    <div class="item">Client: <span id='client'><!--Client--></span></div>
+                    <div class="item">Tools: <span id='tools'><!--Used Tools--></span></div>
+                    <div class="item">Web: <a href=''id='web'><!--Web Link--></a></div>
+                </div>
+            </div>
+           </div>
+          
+           <div class="next move-btn" title='Next'><i class="fas fa-arrow-right"></i></div>
+           <div class="prev move-btn" title='Previous'><i class="fas fa-arrow-left"></i></div>
+           
+        <div class="imgs">
+        <!-- Project Images -->
+        <img src="" alt="project image" id='image'>
+        </div>
+          
+       </div>
+   </div> 
+   <!----------------------------->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item px-3">
+                  <!-- Home Link -->
+                <a class="nav-link active home-link" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item px-3">
+                  <!-- About Section -->
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item px-3">
+                  <!-- Services Section -->
+                <a class="nav-link" href="#services">Services</a>
+              </li>
+              <li class="nav-item px-3">
+                  <!-- Gallery Section -->
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item px-3">
+                  <!-- Works Section -->
+                <a class="nav-link" href="#my-works">Works</a>
+              </li>
+              <li class="nav-item px-3">
+                  <!-- Contact Form -->
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<!----------------------------->
+<!-- Banner -->
+<div class="home" id='home'>
+    <img src="img/2.jpg" alt="Banner">
+    <div class="overlay"> 
+        <div class="text translate opacity" data-speed='0.20'>
+            <h1 class="h1">Your Name</h1><!--Name of the hero-->
+            <p class="lead">Lorem ipsum dolor sit amet.</p><!---Description of the hero-->
+        </div>   
+    </div>
+</div>
+<!----------------------------->
+<!-- About -->
+<div class="about" id='about'>
+    <div class="my-shadow"></div>
+   <div class="container">
+        <div class="row">
+            <div class="col-lg-4 translate opacity"  data-speed='-0.2' data-path='top'>
+                <!-- About Image / Image of hero -->
+                <img src="img/3.jpg" class="" alt="...">
+                </div>
+            <div class="col-lg-8 translate opacity" data-speed='-0.2' data-path='top'>
+                <h3 class="h3 my-color col-lg-2 title">About Me</h3>
+                <div class="my-border"></div>
+                <p class="lead my-color">
+                    <!---About Text-->
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quae temporibus inventore facilis nostrum consequuntur. Sit rem laudantium fuga tenetur hic magnam vitae, quia dolores neque laboriosam maiores minima suscipit.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------------->
+<!-- Services -->
+<div class="services" id='services'>
+    <div class="container">
+        <div class="row">
+            <h2 class="h2 text-center mb-5">Services</h2>
+            <div class="col-lg-4 my-color my-3">
+                <div class="service service-1 text-center">
+                    <div class="main-svg">
+                        <i class="fab fa-internet-explorer"></i>
+                    </div>
+                    <h4 class="h4 px-3">Web Design</h4>
+                    <p class="lead px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi minima beatae ab provident illum id ipsum numquam rem tempore vel.</p>
+                </div>   
+            </div>     
+            <div class="col-lg-4 my-color text-center my-3">
+                <div class="service service-2">
+                    <div class="main-svg">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h4 class="h4 px-3">Graphic Design</h4>
+                    <p class="lead px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi minima beatae ab provident illum id ipsum numquam rem tempore vel.</p>
+                </div>   
+            </div>  
+            <div class="col-lg-4 my-color text-center my-3">
+                <div class="service service-3">
+                    <div class="main-svg">
+                        <i class="fab fa-android"></i>
+                    </div>
+                    <h4 class="h4 px-3">Android Apps</h4>
+                    <p class="lead px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi minima beatae ab provident illum id ipsum numquam rem tempore vel.</p>
+                </div>   
+            </div>    
+            <div class="col-lg-4 my-color text-center my-3">
+                <div class="service">
+                    <div class="main-svg">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h4 class="h4 px-3">Video Editing</h4>
+                    <p class="lead px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi minima beatae ab provident illum id ipsum numquam rem tempore vel.</p>
+                </div>   
+            </div>     
+            <div class="col-lg-4 my-color text-center my-3">
+                <div class="service">
+                    <div class="main-svg">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h4 class="h4 px-3">Photography</h4>
+                    <p class="lead px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi minima beatae ab provident illum id ipsum numquam rem tempore vel.</p>
+                </div>   
+            </div>  
+            <div class="col-lg-4 my-color text-center my-3">
+                <div class="service">
+                    <div class="main-svg">
+                        <i class="fas fa-newspaper"></i>  
+                    </div>
+                    <h4 class="h4 px-3">Content Writing</h4>
+                    <p class="lead px-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi minima beatae ab provident illum id ipsum numquam rem tempore vel.</p>
+                </div>   
+            </div>  
+        </div>
+    </div>
+</div>
+
+<!----------------------------->
+<!-- Counters -->
+<div class="counters my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 text-center count mb-4">
+                <h3 class=" h3 counter" data-target="20000">0</h3>
+					<span>Subscribers</span>
+                </div> 
+                <div class="col-lg-4 text-center count mb-4">
+                <h3 class=" h3 counter" data-target="10000">0</h3>
+					<span>Projects</span>
+                </div>   
+                <div class="col-lg-4 text-center count mb-4">
+                <h3 class=" h3 counter" data-target="80000">0</h3>
+					<span>Tasks</span>
+				</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------------->
+<!-- Gallery -->
+<div class="gallery py-5" id='gallery'>
+    <div class="row">
+    <h2 class="h2 my-color text-center mb-5 mx-3">My Gallery</h2>
+        <ul>
+            <li><img src="img/6.jpg" alt=""></li>
+            <li><img src="img/7.jpg" alt=""></li>
+            <li><img src="img/3.jpg" alt=""></li>
+            <li><img src="img/4.jpg" alt=""></li>
+            <li><img src="img/5.jpg" alt=""></li>
+        </ul>
+    </div>
+</div>
+<!----------------------------->
+<!-- My Works -->
+<div class="my-works py-4" id='my-works'>
+    <div class="container">
+        <div class="row text-center">
+            <h2 class="h2 text-center mb-2">My Works</h2>
+            <ul class='text-center mb-5'>
+                <li class='active' id='all'>All</li>
+                <li  id='web-app'>Web Applications</li>
+                <li id='photoshop'>Photoshop</li>
+            </ul>
+            <div class="col-lg-4 web-app all mb-3" id='programming'>
+                <div class="work-info">
+                    <div class="date">2021</div>
+                    <div class="client">Ahmed</div>
+                    <div class="tools">php</div>
+                    <div class="web">www.domain.com</div>
+                    <div class="title">Programming</div>
+                    <div class="category">web Application</div>
+                    <div class="brief">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eum officiis necessitatibus possimus perferendis dolorum voluptatibus esse ea. Illum, possimus.</div>
+                    <div class="screenshots">
+                        
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/2.jpg" alt="">
+                    <div class="overlay">
+                        <div class="info text-center">
+                            <h3 class="h3">Programming</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div> 
+                </div>  
+            </div>
+            <div class="col-lg-4 web-app all mb-3" id='Design'>
+                <div class="work-info">
+                    <div class="date">2021</div>
+                    <div class="client">Muhamed</div>
+                    <div class="tools">HTML</div>
+                    <div class="web">www.domain.com</div>
+                    <div class="title">Design</div>
+                    <div class="category">Photoshop</div>
+                    <div class="brief">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eum officiis necessitatibus possimus perferendis dolorum voluptatibus esse ea. Illum, possimus.</div>
+                </div>
+                <div class="item">
+                    <img src="img/1.jpg" alt="">
+                    <div class="overlay">
+                        <div class="info text-center">
+                            <h3 class="h3">Design</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div> 
+                </div>  
+            </div> 
+            <div class="col-lg-4 photoshop all mb-3" id='muhamed'>
+                <div class="work-info">
+                    <div class="date">2021</div>
+                    <div class="client">Samer</div>
+                    <div class="tools">C++</div>
+                    <div class="web">www.domain.com</div>
+                    <div class="title">Muhamed</div>
+                    <div class="category">C++ Applicatiob</div>
+                    <div class="brief">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et eum officiis necessitatibus possimus perferendis dolorum voluptatibus esse ea. Illum, possimus.</div>
+                    <div class="screenshots">
+                        <span id="1" data-screenshot='img/3.jpg'></span>
+                        <span id="2" data-screenshot='img/2.jpg'></span>
+                        <span id="3" data-screenshot='img/12.jpg'></span>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/11.jpg" alt="">
+                    <div class="overlay">
+                        <div class="info text-center">
+                            <h3 class="h3">Programming</h3>
+                            <p class="lead">Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div> 
+                </div>  
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------------->
+<!-- Contact -->
+<div class="contact py-4" id='contact'>
+    <div class="container">
+        <h3 class="h3 text-center">Get In Touch</h3>
+        <p class="lead text-center">Lorem ipsum dolor sit amet.</p>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="item mb-5">
+                    <i class="fas fa-map-marker-alt mx-2"></i>
+                    <span class='text'>My Location</span>  
+                </div>   
+                <div class="item mb-5">
+                    <i class="fas fa-envelope mx-2"></i>
+                    <span class='text'>email@domain.com</span>  
+                </div>   
+                <div class="item mb-5">
+                    <i class="fab fa-facebook-messenger mx-2"></i>
+                    <span class='text'>m.me/username</span>  
+                </div> 
+                <div class="item mb-5">
+                    <i class="fas fa-phone mx-2"></i>
+                    <span class='text'>+123456789</span>  
+                </div>   
+            </div>
+            <div class="col-lg-8">
+                <form action="" method="post">
+                    <h5 class="h5">Message Me</h5>
+                    <input type="text" name="full_name" id="fullname" placeholder="Full name">
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <br>
+                    <textarea name="messeage" id="messeage"rows="10" placeholder="Your Message"></textarea>
+                    <br>
+                    <button type="submit" class=' btn-primary'>Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------------->
+<!-- Footer -->
+<footer class='text-center py-4'>
+    <div class="content">Copyright &copy; 2021 Your Name , All Right Reserved</div>
+</footer>
+<!----------------------------->
+    <script src="js/jQuery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery.flipster.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
